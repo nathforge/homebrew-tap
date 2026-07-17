@@ -10,7 +10,7 @@ class MiseTestGo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nathforge/mise-test-go/releases/download/v0.3.0/mise-test-go_darwin_amd64.tar.gz"
-      sha256 "ddbe6f0574b92e7f031cc0359130a00280242514195310cf645d26d478c9f090"
+      sha256 "3eb30882d24aea65a85982f361547971cc4229cac3b6be4ff8b615a9a68be22d"
 
       define_method(:install) do
         bin.install "mise-test-go"
@@ -18,7 +18,7 @@ class MiseTestGo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nathforge/mise-test-go/releases/download/v0.3.0/mise-test-go_darwin_arm64.tar.gz"
-      sha256 "c3a9fc1b5780d15790f23f6c1e332b8d3b179d9b960a1a08ad108ccba6bf9a07"
+      sha256 "606ac44b041c5996db16b2aa8af80c3203660d7c19e4d292630ede5535bebd5f"
 
       define_method(:install) do
         bin.install "mise-test-go"
@@ -29,14 +29,14 @@ class MiseTestGo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nathforge/mise-test-go/releases/download/v0.3.0/mise-test-go_linux_amd64.tar.gz"
-      sha256 "e191b053a8f4f84724edcb2a7539a8bac3b213391ef75129aeade15a30ae3405"
+      sha256 "2bc8ad634935c61df14f94e46883c75af122c2a8c06b208f7b45d516a562aeef"
       define_method(:install) do
         bin.install "mise-test-go"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nathforge/mise-test-go/releases/download/v0.3.0/mise-test-go_linux_arm64.tar.gz"
-      sha256 "5d1e3b5da10b37e54c95cdf1c857a1e2a8d19ca7a7e9321a18b2bb199e96103b"
+      sha256 "06aef47b82f30e8b28497def3c57fd0fd7f6d3bde1865f797821301f544960af"
       define_method(:install) do
         bin.install "mise-test-go"
       end
