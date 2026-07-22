@@ -5,20 +5,20 @@
 class MiseTestNode < Formula
   desc "Testing mise npm and github backends"
   homepage "https://github.com/nathforge/mise-test-node"
-  version "2.3.0"
+  version "2.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nathforge/mise-test-node/releases/download/v2.3.0/mise-test-node_darwin_amd64.tar.gz"
-      sha256 "bdc68fc31dd534b5bed75add32f435fa765522f2eccd49ebdcf7be8b308edb6c"
+      url "https://github.com/nathforge/mise-test-node/releases/download/v2.4.0/mise-test-node_darwin_amd64.tar.gz"
+      sha256 "03cd50bfd32f94c7669de940ff5ae250f90b7924f06041c320bb79c66d575c97"
 
       define_method(:install) do
         bin.install "mise-test-node"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nathforge/mise-test-node/releases/download/v2.3.0/mise-test-node_darwin_arm64.tar.gz"
-      sha256 "a53757230de8ecc25e5c67c2cf4e8bad2a22818fdd8473cfb09633438ccdd84c"
+      url "https://github.com/nathforge/mise-test-node/releases/download/v2.4.0/mise-test-node_darwin_arm64.tar.gz"
+      sha256 "2f29bec30902b1583fe64bdbfbb9dd199b3c20c26da7d6913eb39434890e3627"
 
       define_method(:install) do
         bin.install "mise-test-node"
@@ -28,15 +28,15 @@ class MiseTestNode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nathforge/mise-test-node/releases/download/v2.3.0/mise-test-node_linux_amd64.tar.gz"
-      sha256 "d19259d20d52064059354426c9f639e1b4b3305cf89e54f01c3dd8427bfea37c"
+      url "https://github.com/nathforge/mise-test-node/releases/download/v2.4.0/mise-test-node_linux_amd64.tar.gz"
+      sha256 "97d0cf445089040dc90859b55884f7ee5ea0867c50ce0859081217d0825dbed6"
       define_method(:install) do
         bin.install "mise-test-node"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nathforge/mise-test-node/releases/download/v2.3.0/mise-test-node_linux_arm64.tar.gz"
-      sha256 "ea6e8f164811ed07b8a298a4e795d184c2d52325ea578c4d010de38da263114b"
+      url "https://github.com/nathforge/mise-test-node/releases/download/v2.4.0/mise-test-node_linux_arm64.tar.gz"
+      sha256 "fd493696fee0cb44529778a1abcba1f0238f74663a126b366f80dcad49569f68"
       define_method(:install) do
         bin.install "mise-test-node"
       end
