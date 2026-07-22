@@ -5,16 +5,16 @@
 class AwsSsoTools < Formula
   desc "QoL improvements for engineers using AWS SSO"
   homepage "https://github.com/nathforge/aws-sso-tools"
-  version "0.4.2"
+  version "0.4.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.4.2/aws-sso-tools_darwin_arm64.tar.gz"
-      sha256 "aa800c9b94c9bc48ecfba21c832a1e9630524caa0667cafcbf287d4df723057b"
+      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.4.3/aws-sso-tools_darwin_arm64.tar.gz"
+      sha256 "9ad14f86eaf35fe11c9cdb78e544b5a2440abf3ac81ce1614aa0407fc8fc80f9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.4.2/aws-sso-tools_darwin_amd64.tar.gz"
-      sha256 "5cdb7bce5810443b733540b613562dccbf6b5e87898813b0efe63d37b2279cff"
+      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.4.3/aws-sso-tools_darwin_amd64.tar.gz"
+      sha256 "6d26d1e67dcd061f23b510d9f0dd6e9bbbf2048da45709bf9415fdee4fa33eca"
     end
   end
 
