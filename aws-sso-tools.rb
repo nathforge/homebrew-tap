@@ -5,27 +5,27 @@
 class AwsSsoTools < Formula
   desc "QoL improvements for engineers using AWS SSO"
   homepage "https://github.com/nathforge/aws-sso-tools"
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.0/aws-sso-tools_darwin_arm64.tar.gz"
-      sha256 "38af451da2b31228ba45cb4c9f969e136931c41ae91d85a7186a2db89fd42966"
+      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.1/aws-sso-tools_darwin_arm64.tar.gz"
+      sha256 "b00a0e7fca8d7b4078a8cce4066cc35c4de9a1791bec55f2277e49ff23c70a70"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.0/aws-sso-tools_darwin_amd64.tar.gz"
-      sha256 "a2153404504daba4eca859581e1538d84034c82e51e62b3dd56d5cdcd5dcd85e"
+      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.1/aws-sso-tools_darwin_amd64.tar.gz"
+      sha256 "19d69056ea82b92d434535687af02eaf2b372e40495f4f6185499faeac5ec332"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.0/aws-sso-tools_linux_arm64.tar.gz"
-      sha256 "6204f9d3d5d9dec5e722763486d5af80161a966d5b95b6cb8aff9e1e9d1d1389"
+      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.1/aws-sso-tools_linux_arm64.tar.gz"
+      sha256 "2c3c4ed96dc89fc843be6804c6b320167c20ad4a853766d8a210d7614b84aa13"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.0/aws-sso-tools_linux_amd64.tar.gz"
-      sha256 "56974e8c871e25b625dd2309b95d981687504cc95c20ecb3ab579817b2ed2487"
+      url "https://github.com/nathforge/aws-sso-tools/releases/download/v0.6.1/aws-sso-tools_linux_amd64.tar.gz"
+      sha256 "bf14ad67116c0a82b6d7b44a34f7d3e5c74991d5d3f75ecf0cc64de6acc2dc31"
     end
   end
 
@@ -35,5 +35,6 @@ class AwsSsoTools < Formula
     bin.install "aws-sso-maybe-login"
     bin.install "aws-sso-login-showing-code"
     bin.install "aws-sso-show-code"
+    bin.install "aws-sso-run"
   end
 end
