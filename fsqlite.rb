@@ -5,27 +5,27 @@
 class Fsqlite < Formula
   desc "Mount a SQLite database as a read-only filesystem"
   homepage "https://github.com/nathforge/fsqlite"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.1/fsqlite_darwin_arm64.tar.gz"
-      sha256 "6c78e90c91bf181e49ae21f21e985c86c601b0f2630b3e587b5806996b375951"
+      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.2/fsqlite_darwin_arm64.tar.gz"
+      sha256 "72ad013a5d528b9b43b0d172b41118729b1193f35bfa7c03391a9785d58fb510"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.1/fsqlite_darwin_amd64.tar.gz"
-      sha256 "d2e9a879da78cc789af099ba12eef627080fd33ed0ca2b2cc89ae1ef74868c49"
+      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.2/fsqlite_darwin_amd64.tar.gz"
+      sha256 "5f95063c3a1b62903e34516e8b7466b64968558a7074169058df2869a52a7df0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.1/fsqlite_linux_arm64.tar.gz"
-      sha256 "0ff8f81ffb07558113f9a8aec929906641b0bdf9ea129d498e78bbeeba633368"
+      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.2/fsqlite_linux_arm64.tar.gz"
+      sha256 "65962d8b398db3fcbf3445293b6f5a5ccd027c18a448eb9dbb5add5502697ca1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.1/fsqlite_linux_amd64.tar.gz"
-      sha256 "8cf03d757d8d2853f5fd39d8260cd5b0ae6d6789a4cd2670a853bcbab8abdb22"
+      url "https://github.com/nathforge/fsqlite/releases/download/v0.1.2/fsqlite_linux_amd64.tar.gz"
+      sha256 "c3fd4794963a995dc64d8d47f2921cc541f961d66e40bb77ed1ea95ebea04ac4"
     end
   end
 
